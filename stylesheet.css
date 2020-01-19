@@ -15,18 +15,18 @@ h2 {
 }
 
 #myDIV {
-    position : absolute;
-    object-fit : cover;
-    z-index : -1;
-    top : 0;
-    left : 0;
-    width : 100%;
-    height : 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: azure;
     animation: changeColour;
-    animation-duration : 5s;
-    animation-iteration-count : infinite;
-    animation-direction : alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 @keyframes changeColour {
     from {background-color: azure;}
@@ -43,6 +43,20 @@ h2 {
     margin: 0;
     position: absolute;
     top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.move {
+    position: absolute;
+    top : 200px;
+    left: var(--amount);
+}
+
+.profile {
+    position: absolute;
+    top: 23%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
