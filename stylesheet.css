@@ -1,5 +1,5 @@
 h1 {
-    font-family : Impact, Charcoal, sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size : 90px;
     color : rgb(34, 60, 175);
     text-align : center;
@@ -7,7 +7,7 @@ h1 {
 }
 
 h2 {
-    font-family : "Lucida Console", Monaco, monospace;	
+    font-family: 'Montserrat', sans-serif;	
     font-size : 30px;
     color : black;
     text-align : center;
@@ -33,10 +33,16 @@ h2 {
 }
 
 .boxed {
-    margin-left : auto;
-    margin-right : auto;
-    vertical-align : center;
-    width : 500px;
+    width : 600px;
     background : white;
     border : 2px solid black;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
