@@ -19,7 +19,7 @@ html, body {
 }
 @keyframes changeColour {
     from {background-color: azure;}
-    to {background-color: rgb(176, 247, 247);}
+    to {background-color: rgb(207, 240, 240);}
 }
 
 #headerBar {
