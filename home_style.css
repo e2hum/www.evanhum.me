@@ -1,0 +1,40 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size : 6vw;
+    color : rgb(34, 60, 175);
+    text-align : center;
+    line-height : 1vh;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;	
+    font-size : 2vw;
+    color : black;
+    text-align : center;
+    line-height : 1vh;
+}
+
+.boxed {
+    width: 35vw;
+    background: white;
+    border : 2px solid black;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.move {
+    position: absolute;
+    top : 13vw;
+    left: var(--amount);
+    transition: transform 0.2s;
+}
+
+.move:hover {
+    transform : scale(1.3);
+}
