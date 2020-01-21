@@ -1,17 +1,17 @@
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size : 90px;
+    font-size : 6vw;
     color : rgb(34, 60, 175);
     text-align : center;
-    line-height : 10px;
+    line-height : 1vw;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;	
-    font-size : 30px;
+    font-size : 2vw;
     color : black;
     text-align : center;
-    line-height : 10px;
+    line-height : 1vw;
 }
 
 #myDIV {
@@ -34,7 +34,7 @@ h2 {
 }
 
 .boxed {
-    width : 600px;
+    width : 35vw;
     background : white;
     border : 2px solid black;
 }
@@ -50,19 +50,11 @@ h2 {
 
 .move {
     position: absolute;
-    top : 200px;
+    top : 13vw;
     left: var(--amount);
     transition: transform 0.2s;
 }
 
 .move:hover {
     transform : scale(1.5);
-}
-
-.profile {
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
