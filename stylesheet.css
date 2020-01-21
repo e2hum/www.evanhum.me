@@ -1,22 +1,8 @@
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size : 6vw;
-    color : rgb(34, 60, 175);
-    text-align : center;
-    line-height : 1vh;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;	
-    font-size : 2vw;
-    color : black;
-    text-align : center;
-    line-height : 1vh;
-}
 html, body {
     margin: 0;
     padding: 0;
 }
+
 #myDIV {
     position: absolute;
     object-fit: cover;
@@ -42,7 +28,23 @@ html, body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: -1
+    z-index: -1;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size : 6vw;
+    color : rgb(34, 60, 175);
+    text-align : center;
+    line-height : 1vh;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;	
+    font-size : 2vw;
+    color : black;
+    text-align : center;
+    line-height : 1vh;
 }
 
 .boxed {
