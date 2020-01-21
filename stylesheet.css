@@ -22,13 +22,32 @@ html, body {
     to {background-color: rgb(207, 240, 240);}
 }
 
-#headerBar {
-    height: 15vh;
-    background: rgb(63, 63, 63);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(59, 59, 59);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: green;
 }
 
 h1 {
