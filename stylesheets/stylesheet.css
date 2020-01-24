@@ -45,7 +45,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(59, 59, 59);
+    background-color: var(--heading-color);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -66,7 +66,7 @@ li a:hover {
 }
 
 .active {
-    background-color: green;
+    background-color: rgb(7, 126, 180);
 }
 
 .sliderPosition {
