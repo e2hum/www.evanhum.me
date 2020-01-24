@@ -1,7 +1,9 @@
+@import "stylesheet.css";
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size : 6vw;
-    color : rgb(34, 60, 175);
+    color : var(--primary-color);
     text-align : center;
     line-height : 1vh;
 }
@@ -9,14 +11,13 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;	
     font-size : 2vw;
-    color : black;
+    color : var(--secondary-color);
     text-align : center;
     line-height : 1vh;
 }
 
 .boxed {
     width: 35vw;
-    background: white;
     border : 2px solid black;
 }
 
