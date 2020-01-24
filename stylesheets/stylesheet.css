@@ -6,11 +6,13 @@ html,body {
 }
 
 :root {
-    --primary-color: #302AE6;
+    --primary-color: rgb(29, 106, 248);
     --secondary-color: #536390;
     --font-color: #424242;
     --bg-color: #fff;
-    --heading-color: #292922;
+    --heading-color: #98e2ff;
+    --active-color: #65bbdd;
+    --hover-color: #e3f7ff;
 }
 
 [data-theme="dark"] {
@@ -18,7 +20,9 @@ html,body {
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
     --bg-color: #161625;
-    --heading-color: #818cab;
+    --heading-color: #090549;
+    --active-color: #0e0681;
+    --hover-color: #1307be;
 }
 
 #myDIV {
@@ -55,18 +59,18 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: var(--font-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: var(--hover-color);
 }
 
 .active {
-    background-color: rgb(7, 126, 180);
+    background-color: var(--active-color);
 }
 
 .sliderPosition {
@@ -78,7 +82,14 @@ li a:hover {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
+}
+
+  em {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    font-size: 1rem;
   }
+  
   .theme-switch {
     display: inline-block;
     height: 34px;
