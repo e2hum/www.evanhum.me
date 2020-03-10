@@ -1,6 +1,6 @@
 .boxed {
     width: 40vw;
-    background: rgb(54, 54, 54);
+    background: white;
     border : 2px solid black;
     margin: 0;
     position: absolute;
@@ -19,7 +19,7 @@ h1 {
 p {
     margin: 5%;
     font-family: 'Monserrat', 'sans-serif';
-    font-size: 1.5vw;
-    color: white;
+    font-size: 1.2vw;
+    color: black;
 
 }
