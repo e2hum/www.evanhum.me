@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
     <head>
     <title>Evan Hum</title>
     <!-- Creates title icon -->
@@ -18,14 +17,21 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     </head>
-    <body>
-        <script type="text/javascript" src="my_script.js"></script>
 
+    <body>
+        
+        <script src="my_script.js"></script>
+        
         <ul>
             <li><a class="active" href = "./index.html">Home</a></li>
             <li style="float:right"><a href = "./about.html">About</a></li>
         </ul>
-
+        <div class="container">
+            <div class="toggle-container">
+                <input type="checkbox" id="switch" name="theme" />
+                <label for="switch">Toggle</label>
+            </div>
+         </div>
 
         <div class = "center">
             <div class = "boxed">
@@ -41,16 +47,6 @@
             </div>
             <div class = "move" style="--amount: 22vw;">
                 <a href="images/Tron_Resume.pdf" target = "_blank"><img src="images/resume_icon.png" alt="GitHub" style="width: 3vw;"></a>
-            </div>
-        </div>
-
-        <div class="sliderPosition">
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox"/>
-                    <div class="slider round"></div>
-                </label>
-            <em>Dark Mode!</em>
             </div>
         </div>
     </body>
