@@ -124,11 +124,11 @@ li a:hover {
     width: 26px;
   }
   
-  input:checked + .slider {
+  input[type=checkbox]:checked + .slider {
     background-color: #136bdf;
   }
   
-  input:checked + .slider:before {
+  input[type=checkbox]:checked + .slider:before {
     transform: translateX(26px);
   }
   
