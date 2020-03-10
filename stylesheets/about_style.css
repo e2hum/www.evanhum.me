@@ -1,10 +1,8 @@
 .boxed {
-    width: 40vw;
-    background: white;
-    border : 2px solid black;
+    width: 50vw;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -13,7 +11,11 @@ h1 {
     font-size: 6vw;
     text-align: center;
     margin: auto;
-    color: rgb(109, 160, 255);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(69, 123, 221);
+    position: absolute;
 }
 
 p {
@@ -21,5 +23,7 @@ p {
     font-family: 'Monserrat', 'sans-serif';
     font-size: 1.2vw;
     color: black;
+    text-align: center;
+    line-height: 150%;
 
 }
