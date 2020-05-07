@@ -14,30 +14,89 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-
 </head>
 <style>
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }   
-    h1 {
+    body {
+        background: white;
         font-family: 'Monserrat', sans-serif;
-        font-size: 6vw;
         text-align: center;
         margin: auto;
         color: rgb(69, 123, 221);
 
     }
-    p {
-        font-family: 'Monserrat', 'sans-serif';
-        font-size: 1.2vw;
-        color: black;
-        text-align: center;
-        line-height: 100%;
+    .thumbnails img {
+        height: 100px;
+        border: 4px solid #555;
+        padding: 1px;
+        margin: 0 10px 10px 0;
+        }
 
+    .thumbnails img:hover {
+        border: 4px solid #00ccff;
+    }
+
+    .preview img {
+        
+        border: 4px solid #444;
+        padding: 1px;
+        width: 40vw;
+    }
+
+    h1 {
+        font-family: 'Monserrat', sans-serif;
+        font-size: 5vw;
+        text-align: center;
+        margin: auto;
+        color: rgb(69, 123, 221);
+
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size 1vw;
+        text-align: center;
+        color: white;
+    }
+    
+    .flip-card {
+        background-color: transparent;
+        height: 110px;
+        width: 190px;
+        perspective: 1000px;
+        padding: 10px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
     }
 </style>
 <body>
@@ -45,13 +104,56 @@
         <li><a  href = "index.html">Home</a></li>
         <li style="float:right"><a class="active" href = "about.html">About</a></li>
     </ul>
-    <h1>Artwork</h1>
-    <p>Attempt 1: Drawn with a mouse using MS Paint (~20 minutes)</p>
-    <a href="images/Spider_Gwen.png" target = "_blank"><img src="images/Spider_Gwen.png" alt="Spider Gwen" style="width: 35vw;" class="center";></a>
-    <p>Attempt 2: Drawn on a touchscreen using MS Paint (~3 hours)</p>
-    <a href="images/Saitama.jpg" target = "_blank"><img src="images/Saitama.jpg" alt="Saitama" style="width: 35vw;" class="center"></a>
-    <p>Attempt 3: Drawn on a writing tablet using Photoshop (~1 day)</p>
-    <a href="images/Tanjiro.png" target = "_blank"><img src="images/Tanjiro.png" alt="Tanjiro" style="width: 35vw;" class="center"></a>
-    <br> <br>
+
+    <div id="container" align="center">
+        <h1>Artwork Gallery</h1>
+        <br />
+        <div class="thumbnails">
+            <table>
+            <tr>
+            <th>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img onmouseover="preview.src=img1.src" name="img1" src="images/Spider_Gwen.png"/>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Attempt 1: Drawn with a mouse using MS Paint (~20 minutes)</p>
+                  </div>
+                </div>
+              </div>
+              </th>
+              <th>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img onmouseover="preview.src=img2.src" name="img2" src="images/Saitama.jpg"/>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Attempt 2: Drawn on a touchscreen using MS Paint (~3 hours)</p>
+                  </div>
+                </div>
+              </div>
+              </th>
+              <th>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img onmouseover="preview.src=img3.src" name="img3" src="images/Tanjiro.png"/>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Attempt 3: Drawn on a writing tablet using Photoshop (~1 day)</p>
+                  </div>
+                </div>
+              </div>
+              </th>
+              </tr>
+              </table> 
+        </div>
+        <br />
+        <div class="preview" align="center">
+            <img name="preview" src="images/Spider_Gwen.png"/>
+        </div>
+    </div>
 </body>
 </html>

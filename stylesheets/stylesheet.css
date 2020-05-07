@@ -1,4 +1,4 @@
-html {
+:root {
 
     --primary-color: rgb(27, 107, 255);
     --secondary-color: #536390;
@@ -7,6 +7,8 @@ html {
     --heading-color: #5290ee;
     --active-color: #65bbdd;
     --hover-color: #e3f7ff;
+    --from-color: rgb(207, 240, 240);
+    --to-color: azure;
 
 }
 
@@ -18,14 +20,16 @@ body {
   color: var(--font-color);
 }
 
-html[data-theme='dark'] {
-  --primary-color: #9A97F3;
+.dark-mode {
+  --primary-color: rgb(125, 121, 238);
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
   --bg-color: #161625;
   --heading-color: #090549;
   --active-color: #0e0681;
   --hover-color: #1307be;
+  --from-color: black;
+  --to-color: rgb(3, 12, 59);
 }
 
 #myDIV {
@@ -36,15 +40,14 @@ html[data-theme='dark'] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: azure;
     animation: changeColour;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 @keyframes changeColour {
-    from {background-color: rgb(207, 240, 240);}
-    to {background-color: azure;}
+    from {background-color: var(--from-color);}
+    to {background-color: var(--to-color);}
 }
 
 ul {
@@ -76,58 +79,70 @@ li a:hover {
     background-color: var(--active-color);
 }
 
-.container {
-  margin: 1em;
-  padding: 1em;
-}
-input[type=checkbox]{
-height: 0;
-width: 0;
-visibility: hidden;
-}
-
-label {
-cursor: pointer;
-text-indent: -9999px;
-width: 52px;
-height: 27px;
-background: grey;
-float: right;
-border-radius: 100px;
-position: relative;
-}
-
-label:after {
-content: '';
-position: absolute;
-top: 3px;
-left: 3px;
-width: 20px;
-height: 20px;
-background: #fff;
-border-radius: 90px;
-transition: 0.3s;
-}
-
-input:checked + label {
-background: var(--primary-color);
-}
-
-input:checked + label:after {
-left: calc(100% - 5px);
-transform: translateX(-100%);
-}
-
-label:active:after {
-width: 45px;
-}
-
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-transition: all 750ms !important;
-transition-delay: 0 !important;
-}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+  }
+  
+  /*slider switch css */
+  .theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    
+    em {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+  }
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
 
   
