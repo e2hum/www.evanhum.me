@@ -10,14 +10,14 @@
     <!-- Default commands -->
     <meta charset = "utf-8";>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
 </head>
 <style>
     body {
-        background: white;
+        background: lightblue;
         font-family: 'Monserrat', sans-serif;
         text-align: center;
         margin: auto;
@@ -56,11 +56,14 @@
         font-size 1vw;
         text-align: center;
         color: white;
+        padding-top: 5px;
+        padding-left: 1px;
+        padding-right: 1px;
     }
     
     .flip-card {
         background-color: transparent;
-        height: 110px;
+        height: 120px;
         width: 190px;
         perspective: 1000px;
         padding: 10px;
@@ -100,13 +103,16 @@
     }
 </style>
 <body>
-    <ul>
-        <li><a  href = "index.html">Home</a></li>
-        <li style="float:right"><a class="active" href = "about.html">About</a></li>
-    </ul>
+    <!-- Navigation-->
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Home<span class="sr-only">(current)</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
 
     <div id="container" align="center">
-        <h1>Artwork Gallery</h1>
+        <h1><strong>Artwork Gallery</strong></h1>
         <br />
         <div class="thumbnails">
             <table>
@@ -115,10 +121,10 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img onmouseover="preview.src=img1.src" name="img1" src="images/Spider_Gwen.png"/>
+                    <img onmouseover="preview.src=img1.src" name="img1" src="assets/images/Spider_Gwen.png"/>
                   </div>
                   <div class="flip-card-back">
-                    <p>Attempt 1: Drawn with a mouse using MS Paint (~20 minutes)</p>
+                    <p>Attempt 1: Drawn with a mouse using MS Paint <br>(~20 minutes)</p>
                   </div>
                 </div>
               </div>
@@ -127,7 +133,7 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img onmouseover="preview.src=img2.src" name="img2" src="images/Saitama.jpg"/>
+                    <img onmouseover="preview.src=img2.src" name="img2" src="assets/images/Saitama.jpg"/>
                   </div>
                   <div class="flip-card-back">
                     <p>Attempt 2: Drawn on a touchscreen using MS Paint (~3 hours)</p>
@@ -139,7 +145,7 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img onmouseover="preview.src=img3.src" name="img3" src="images/Tanjiro.png"/>
+                    <img onmouseover="preview.src=img3.src" name="img3" src="assets/images/Tanjiro.png"/>
                   </div>
                   <div class="flip-card-back">
                     <p>Attempt 3: Drawn on a writing tablet using Photoshop (~1 day)</p>
@@ -152,7 +158,7 @@
         </div>
         <br />
         <div class="preview" align="center">
-            <img name="preview" src="images/Spider_Gwen.png"/>
+            <img name="preview" src="assets/images/Spider_Gwen.png"/>
         </div>
     </div>
 </body>

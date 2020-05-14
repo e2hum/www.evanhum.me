@@ -1,46 +1,210 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
     <head>
+    <!-- Default commands -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>Evan Hum</title>
     <!-- Creates title icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-io/favicon-16x16.png">
     <link rel="manifest" href="favicon-io/site.webmanifest">
-    <!-- Default commands -->
-    <meta charset = "utf-8";>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/home_style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script type = "text/javascript" src="my_script.js"></script>
     </head>
 
-    <body>
-        <ul>
-            <li><a class="active" href = "./index.html">Home</a></li>
-            <li style="float:right"><a href = "./about.html">About</a></li>
-        </ul>
-        <button onclick="darkMode()">Toggle Dark Mode</button> 
-
-        <div class = "center">
-            <div class = "boxed">
-                <div id="myDIV"></div>
-                <h1>EVAN HUM</h1>
-                <h2>MECHATRONICS ENGINEERING</h2>
+    <body id="page-top">       
+        <!-- Navigation-->
+        <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#home">Home<span class="sr-only">(current)</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="nav1">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+          </nav>
+          <div data-spy="scroll" data-target="#navbar" data-offset="0">
+            <!-- Masthead-->
+            <header class="masthead text-center" id="home">
+                <div class="container d-flex align-items-center flex-column">
+                    <!-- Masthead Avatar Image-->
+                    <img class="masthead-avatar mb-5" src="assets/images/avatar.svg" alt="" />
+                    <!-- Masthead Heading-->
+                    <h1 class="masthead-heading text-uppercase mb-0"><strong>Evan Hum</strong></h1>
+                    <!-- Masthead Subheading-->
+                    <p class="masthead-subheading font-weight-light mb-0">University of Waterloo - Mechatronics Engineering</p>
+                </div>
+            </header>
+            <!-- Portfolio Section -->
+            <section class="page-section portfolio" id="portfolio">
+                <div class="container">
+                    <h2 class="page-section-heading text-center text-uppercase text-primary mb-3">Portfolio</h2>
+                    <p class="page-section-subheading text-center font-weight-light mb-3">This section is still a work in progress, content will be added once more projects are completed.</p>
+                    <!-- Portfolio Grid Items-->
+                    <div class="row">
+                        <!-- Portfolio Item 1 -->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#project1">
+                                <img class="img-fluid" src="assets/images/project1.png" alt="" />
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 2 -->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#project2">
+                                <img class="img-fluid" src="assets/images/project2.png" alt="" />
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 3 -->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#project3">
+                                <img class="img-fluid" src="assets/images/project3.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section -->
+            <section class="page-section2 about" id="about">
+                <div class="container">
+                    <h2 class="page-section-heading2 text-center text-uppercase mb-3">About</h2>
+                    <p class="page-section-subheading2 text-center font-weight-light mb-0"> 
+                        I am going into my second year of Mechatronics Engineering at the University of Waterloo!
+                        Driven by passion and a desire to grow, I'm always up for trying something new.
+                        Over the years, I've often found myself caught up in sports, dabbling in musical instruments, 
+                        or clicking a keyboard and mouse a few too many times.  Some of my more recent hobbies include 
+                        digital drawing as well as video editing. <br><br>
+                        <a class="btn btn-info btn-lg" href="./drawings.html" role="button">Artwork Gallery</a>
+                        <br><br>
+                        In the meantime, I'll keep working on my website.</p>
+                </div>
+            </section>
+            <section class="page-section portfolio" id="contact">
+                <div class="container">
+                    <h2 class="page-section-heading text-center text-uppercase text-primary mb-5">Contact</h2>
+                    <div class="row justify-content-center">
+                        <!-- Portfolio Item 1 -->
+                        <div class="col-sm-2 mb-5">
+                            <div class="portfolio-item mx-auto">
+                                <a href="https://www.github.com/e2hum" target = "_blank"><img class="img-fluid" src="assets/images/github_icon.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 2 -->
+                        <div class="col-sm-2  mb-5">
+                            <div class="portfolio-item mx-auto">
+                                <a href="https://linkedin.com/in/ehum" target = "_blank"><img class="img-fluid" src="assets/images/linkedin_icon.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 3 -->
+                        <div class="col-sm-2 mb-5">
+                            <div class="portfolio-item mx-auto">
+                                <a href="assets/images/tron_resume.pdf" target = "_blank"><img class="img-fluid" src="assets/images/resume_icon.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                
+    
+            <!-- Portfolio Modal 1 -->
+            <div class="portfolio-modal modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        </button>
+                        <div class="modal-body text-center">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-3">Project 1</h2>
+                                        <!-- Portfolio Modal - Image-->
+                                        <img class="img-fluid rounded mb-5" src="assets/images/project1.png" alt="" />
+                                        <!-- Portfolio Modal - Text-->
+                                        <p class="mb-5">This is Project 1. It's still in progress but once it is complete it will be on display here!</p>
+                                        <button class="btn btn-primary" href="#" data-dismiss="modal">Close Window</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class = "move" style="--amount: 10vw;">
-                <a href="https://github.com/e2hum" target = "_blank"><img src="images/github_icon.png" alt="GitHub" style="width: 3vw;"></a>
-            </div>
-            <div class = "move" style="--amount: 16vw;">
-                <a href="https://linkedin.com/in/ehum" target = "_blank"><img src="images/linkedin_icon.png" alt="GitHub" style="width: 3vw;"></a>
-            </div>
-            <div class = "move" style="--amount: 22vw;">
-                <a href="images/resume.pdf" target = "_blank"><img src="images/resume_icon.png" alt="GitHub" style="width: 3vw;"></a>
+          </div>
+          <!-- Portfolio Modal 2 -->
+          <div class="portfolio-modal modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-3">Project 2</h2>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/images/project2.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">This is Project 2. It's still in progress but once it is complete it will be on display here!</p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal">Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+      </div>
+      <!-- Portfolio Modal 3 -->
+      <div class="portfolio-modal modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-3">Project 3</h2>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/images/project3.png" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">This is Project 3. It's still in progress but once it is complete it will be on display here!</p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal">Close Window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+        <!-- BootStrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>
 
