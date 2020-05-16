@@ -21,7 +21,7 @@
     
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/home_style.css">
-    <script type = "text/javascript" src="my_script.js"></script>
+    <script type = "text/javascript" src="javascript/scripts.js"></script>
     </head>
 
     <body id="page-top">       
@@ -99,9 +99,64 @@
                         In the meantime, I'll keep working on my website.</p>
                 </div>
             </section>
+
             <section class="page-section portfolio" id="contact">
                 <div class="container">
-                    <h2 class="page-section-heading text-center text-uppercase text-primary mb-5">Contact</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-primary mb-5">Contact</h2>
+                <p class="page-section-subheading text-center mx-auto mb-5">Feel free to leave me a message and I'll
+                    get back to you as soon as possible!
+                </p>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                 
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-info" onclick="validateForm();">Send</a>
+                        </div>
+                        <div class="text-danger status"></div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <footer class="page-section2">
+                <div class="container">
                     <div class="row justify-content-center">
                         <!-- Portfolio Item 1 -->
                         <div class="col-sm-2 mb-5">
@@ -123,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </footer>
                 
     
             <!-- Portfolio Modal 1 -->
