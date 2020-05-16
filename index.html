@@ -107,54 +107,35 @@
                     get back to you as soon as possible!
                 </p>
 
-                <div class="row justify-content-center">
+                        <form id="contact-form" name="contact-form" action="https://formspree.io/xknqogew" method="POST">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Name</label>
+                                    <input type="text" id="name" name="name" class="form-control">
 
-                    <div class="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control">
-                                        <label for="name" class="">Name</label>
-                                    </div>
                                 </div>
 
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control">
-                                        <label for="email" class="">Email</label>
-                                    </div>
+                                <div class="form-group col-md-6">
+                                    <label>Email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
                                 </div>
                             </div>
-                 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" class="form-control">
-                                        <label for="subject" class="">Subject</label>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control">
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label> Message</label>
+                                <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
                             </div>
+                            <button type="submit" class="btn-info">Send</button>
                         </form>
-
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-info" onclick="validateForm();">Send</a>
-                        </div>
-                        <div class="text-danger status"></div>
                     </div>
                 </div>
-            </div>
-            </section>
-
+                </div>
+                </section>
+                
             <footer class="page-section2">
                 <div class="container">
                     <div class="row justify-content-center">
