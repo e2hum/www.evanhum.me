@@ -1,18 +1,16 @@
 @charset "UTF-8";
 :root {
-    --primary-color: rgb(27, 107, 255);
-    --secondary-color: rgb(9, 32, 133);
-    --bg1-color: #8dd0fd;
-    --font-color: #424242;
-    --bg2-color: rgb(240, 240, 240);
-
+  --primary-color: rgb(27, 107, 255);
+  --secondary-color: rgb(9, 32, 133);
+  --bg1-color: #8dd0fd;
+  --font-color: #424242;
+  --bg2-color: rgb(240, 240, 240);
 }
 .dark-mode {
   --primary-color: rgb(125, 121, 238);
   --bg-color: #818cab;
   --font-color: #e1e1ff;
   --bg2-color: #161625;
-
 }
 .container {
   width: 100%;
@@ -31,14 +29,14 @@
   font-size: 3.5rem;
   line-height: 1rem;
   color: var(--secondary-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-bottom: 1.25rem;
 }
 /* Subtitle Text */
 .masthead .masthead-subheading {
   font-size: 1.25rem;
   color: var(--font-color);
-  font-family: 'Lato', serif;
+  font-family: "Lato", serif;
 }
 .masthead .masthead-avatar {
   width: 15rem;
@@ -57,56 +55,56 @@
     font-size: 1.5rem;
   }
 }
-  .page-section {
-    padding: 3rem 0;
-    background-color: var(--bg2-color);
-  }
+.page-section {
+  padding: 3rem 0;
+  background-color: var(--bg2-color);
+}
+.page-section .page-section-heading {
+  font-size: 3rem;
+  line-height: 2rem;
+}
+.page-section .page-section-subheading {
+  font-size: 1.25rem;
+  color: var(--font-color);
+  font-family: "Lato", serif;
+}
+@media (min-width: 992px) {
   .page-section .page-section-heading {
     font-size: 3rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
   }
   .page-section .page-section-subheading {
-    font-size: 1.25rem;
-    color: var(--font-color);
-    font-family: 'Lato', serif;
+    font-size: 1.5rem;
   }
-  @media (min-width: 992px) {
-    .page-section .page-section-heading {
-      font-size: 3rem;
-      line-height: 2.5rem;
-    }
-      .page-section .page-section-subheading {
-        font-size: 1.5rem;
-    }
-  }
+}
 
-  .page-section2 {
-    padding: 3rem 0;
-    background-color: var(--bg1-color);
-  }
+.page-section2 {
+  padding: 3rem 0;
+  background-color: var(--bg1-color);
+}
+.page-section2 .page-section-heading2 {
+  font-size: 3rem;
+  line-height: 2rem;
+}
+.page-section2 .page-section-subheading2 {
+  font-size: 1.25rem;
+  color: var(--font-color);
+  font-family: "Lato", serif;
+}
+@media (min-width: 992px) {
   .page-section2 .page-section-heading2 {
     font-size: 3rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
   }
   .page-section2 .page-section-subheading2 {
-    font-size: 1.25rem;
-    color: var(--font-color);
-    font-family: 'Lato', serif;
+    font-size: 1.5rem;
   }
-  @media (min-width: 992px) {
-    .page-section2 .page-section-heading2 {
-      font-size: 3rem;
-      line-height: 2.5rem;
-    }
-      .page-section2 .page-section-subheading2 {
-        font-size: 1.5rem;
-    }
-  }
-  .portfolio .portfolio-item {
-    cursor: pointer;
-    position: relative;
-    display: block;
-    max-width: 25rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
-  }
+}
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
