@@ -1,7 +1,10 @@
-function darkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
+// Dark Mode Switch
+const themeSwitch = document.querySelector('input[name="darkMode"]');
+
+themeSwitch.addEventListener('change', () => {
+  console.log(document.body.classList)
+  document.body.classList.toggle('dark-mode');
+});
 
 // Contact Form Validation
 function validateForm() {

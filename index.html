@@ -19,31 +19,42 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/home_style.css">
-    <script type = "text/javascript" src="javascript/scripts.js"></script>
     </head>
 
-    <body id="page-top">       
+    <body class="light-mode">       
         <!-- Navigation-->
-        <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="#home">Home<span class="sr-only">(current)</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="nav1">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                  </ul>
-          </nav>
+        <header>
+            <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#home">Home<span class="sr-only">(current)</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <label class="switch">
+                            <i class="fa fa-adjust"></i>
+                            <div>
+                                <input type="checkbox" name="darkMode" />
+                                <span class="slider round"></span>
+                            </div>
+                            </label>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+            </nav>
+        </header>
           <div data-spy="scroll" data-target="#navbar" data-offset="0">
             <!-- Masthead-->
             <header class="masthead text-center" id="home">
@@ -59,7 +70,7 @@
             <!-- Portfolio Section -->
             <section class="page-section portfolio" id="portfolio">
                 <div class="container">
-                    <h2 class="page-section-heading text-center text-uppercase text-primary mb-3">Portfolio</h2>
+                    <h2 class="page-section-heading text-center text-uppercase mb-3">Portfolio</h2>
                     <p class="page-section-subheading text-center font-weight-light mb-3">This section is still a work in progress, content will be added once more projects are completed.</p>
                     <!-- Portfolio Grid Items-->
                     <div class="row">
@@ -102,11 +113,10 @@
 
             <section class="page-section portfolio" id="contact">
                 <div class="container">
-                <h2 class="page-section-heading text-center text-uppercase text-primary mb-5">Contact</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-5">Contact</h2>
                 <p class="page-section-subheading text-center mx-auto mb-5">Feel free to leave me a message and I'll
                     get back to you as soon as possible!
                 </p>
-
                         <form id="contact-form" name="contact-form" action="https://formspree.io/xknqogew" method="POST">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -247,12 +257,12 @@
                 </div>
             </div>
         </div>
-    </div>
-  </div>
         <!-- BootStrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   </body>
+        <script type = "text/javascript" src="javascript/scripts.js"></script>
+    </body>
 </html>
 
 
