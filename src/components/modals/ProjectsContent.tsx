@@ -16,6 +16,7 @@ import pokemonImages from "../../assets/images/pokemon-images.png";
 import pokemonTestResults from "../../assets/images/pokemon-test-results.png";
 import newsApp from "../../assets/images/news-app.png";
 import newsAppDemo from "../../assets/images/news-app-ai.png";
+import spicetreeDemo from "../../assets/videos/spicetree-demo.mp4"
 
 const projects = [
   {
@@ -30,7 +31,7 @@ const projects = [
       "SolidWorks",
       "Electronics Prototyping",
     ],
-    link: "https://example.com/fileshare",
+    link: spicetreeDemo,
     color: "#77DD77",
   },
   {

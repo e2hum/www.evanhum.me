@@ -39,7 +39,7 @@ const LeftPanel = () => {
           <IconButton color="inherit" href="mailto:ehum7@hotmail.com">
             <EmailIcon fontSize="large" />
           </IconButton>
-          <IconButton color="inherit" href="/resume.pdf" target="_blank">
+          <IconButton color="inherit" href="./files/ehum_resume.pdf" target="_blank">
             <DescriptionIcon fontSize="large" />
           </IconButton>
         </Stack>
