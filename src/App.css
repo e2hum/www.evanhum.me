@@ -1,0 +1,65 @@
+.background-stars {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px, 100px 100px;
+  background-position: 0 0, 25px 25px;
+  animation: moveStars 30s linear infinite;
+  opacity: 0.28;
+  z-index: 0;
+}
+
+@keyframes moveStars {
+  0% { background-position: 0 0, 25px 25px; }
+  100% { background-position: 0 1000px, 25px 1025px; }
+}
+
+/* Scene container */
+.scene-wrapper {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  transform: scale(var(--scale, 1));
+  transform-origin: center;
+  image-rendering: pixelated;
+  flex-shrink: 0; /* don't allow it to be squished */
+}
+
+/* Room background image */
+.scene-room {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  image-rendering: pixelated;
+}
+
+/* Responsive: stacked layout on vertical/narrow screens */
+@media (max-aspect-ratio: 4/3) {
+  .layout {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    gap: 20px;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .scene-wrapper {
+    transform-origin: center top;
+  }
+}

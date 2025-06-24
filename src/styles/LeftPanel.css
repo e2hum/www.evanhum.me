@@ -1,0 +1,21 @@
+.left-panel h1 {
+  margin: 0 0 20px 0;
+  font-size: clamp(3rem, 2vw, 2rem);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #00ffc3; /* neon or accent color */
+}

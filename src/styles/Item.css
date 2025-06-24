@@ -1,0 +1,82 @@
+/* Item.css */
+.scene-item {
+  position: absolute;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.room {
+  height: auto;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.desk {
+  top: 190px;
+  left: 75px;
+}
+
+.computer {
+  top: 155px;
+  left: 260px;
+}
+
+.deskmat {
+  top: 217px;
+  left: 160px
+}
+
+.keyboard {
+  top: 245px;
+  left: 220px;
+}
+
+.mouse {
+  top: 235px;
+  left: 255px;
+}
+
+.chair {
+  top: 260px;
+  left: 260px;
+}
+
+.chair:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.monitor {
+  top: 177px;
+  left: 175px;
+}
+
+.monitor:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.bulletin {
+  top: 150px;
+  left: 350px;
+}
+
+.bulletin:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.posters {
+  top: 120px;
+  left: 115px;
+}
+
+.posters:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
