@@ -9,6 +9,10 @@ import {
   Typography,
 } from '@mui/material';
 
+import rumiThumb from '../../assets/art/Rumi_color-thumb.jpg';
+import rumiFull from '../../assets/art/Rumi_color-full.jpg';
+import jinuThumb from '../../assets/art/Jinu_color-thumb.jpg';
+import jinuFull from '../../assets/art/Jinu_color-full.jpg';
 import frierenThumb from '../../assets/art/frieren-thumb.jpg';
 import frierenFull from '../../assets/art/frieren-full.jpg';
 import bakugoThumb from '../../assets/art/bakugo-thumb.jpg';
@@ -30,6 +34,16 @@ import dragoniteFull from '../../assets/art/dragonite-full.jpg';
 
 
 const artwork = [
+  { 
+    title: 'Rumi (Kpop Demon Hunters)', 
+    thumb: rumiThumb,
+    full: rumiFull,
+  },
+  { 
+    title: 'Jinu (Kpop Demon Hunters)', 
+    thumb: jinuThumb,
+    full: jinuFull,
+  },
   { 
     title: 'Frieren (Frieren)', 
     thumb: frierenThumb,
